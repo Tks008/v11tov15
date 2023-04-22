@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import State from './State';
 import ClassState from './ClassState'
+import PropsExampl from './PropsExampl'
 
 function App() {
   return (
@@ -17,13 +18,18 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         > 
-          Learn React
+          Learn React 
         </a>
        {
        //<State></State>//
       
       }
-       <ClassState></ClassState>
+      {
+       //<ClassState></ClassState>
+      }
+      <PropsExampl name="Tushar" email="tks@gmail.com" address={{city:"KOlkata",pin:712413}}></PropsExampl>
+      <PropsExampl name="Payel" email="payel@gmail.com" address={{city:"KOlkata2",pin:7124135}}></PropsExampl>
+      <PropsExampl name="Evan" email="Evan@gmail.com" address={{city:"KOlkata3",pin:71241366}}></PropsExampl>
       </header>
 
     </div>
