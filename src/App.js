@@ -1,10 +1,13 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import State from './State';
 import ClassState from './ClassState'
 import PropsExampl from './PropsExampl'
 
+
 function App() {
+  let [name,setData]=useState("Tusharq")
   return (
     <div className="App">
       <header className="App-header">
@@ -27,9 +30,12 @@ function App() {
       {
        //<ClassState></ClassState>
       }
-      <PropsExampl name="Tushar" email="tks@gmail.com" address={{city:"KOlkata",pin:712413}}></PropsExampl>
-      <PropsExampl name="Payel" email="payel@gmail.com" address={{city:"KOlkata2",pin:7124135}}></PropsExampl>
-      <PropsExampl name="Evan" email="Evan@gmail.com" address={{city:"KOlkata3",pin:71241366}}></PropsExampl>
+      <PropsExampl name={name} email="tks@gmail.com" address={{city:"KOlkata",pin:712413}}></PropsExampl>
+      {
+      //<PropsExampl name="Payel" email="payel@gmail.com" address={{city:"KOlkata2",pin:7124135}}></PropsExampl>
+      //<PropsExampl name="Evan" email="Evan@gmail.com" address={{city:"KOlkata3",pin:71241366}}></PropsExampl>
+}
+      <button onClick={()=>setData("Tushar TO Bond")}>Click Me to Pass Data</button>
       </header>
 
     </div>
