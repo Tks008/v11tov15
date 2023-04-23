@@ -7,6 +7,7 @@ import PropsExampl from './PropsExampl'
 import PropInClass from './PropInClass';
 import Input from './Input';
 import InputButtonClick from './InputButtonClick'
+import HideShow from './HideShow'
 
 function App() {
   let [name,setData]=useState("Tusharq")
@@ -44,9 +45,10 @@ function App() {
     //<PropInClass name="Megnath" Email="meg@gmail.com"></PropInClass>
     //<button onClick={()=>setData("Tushar TO Bond")}>Click Me to Pass Data</button>
    // <Input></Input>
+   //<InputButtonClick></InputButtonClick>
  }
-    
-    <InputButtonClick></InputButtonClick>
+    <HideShow></HideShow>
+   
       </header>
 
     </div>
